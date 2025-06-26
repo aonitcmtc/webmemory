@@ -66,7 +66,7 @@
         </div>
     </div>
 
-<script src="<?= base_url(); ?>lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+<script src="/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
 <script>
     // jquery
     $(document).ready(function(){
@@ -107,7 +107,7 @@
                 var output = $("#sql_output").val();
 
                 $.ajax({
-                    url: '/sql/add',
+                    url: '<?= base_url(); ?>sql/add',
                     type: 'POST',
                     dataType: "json",
                     // headers: {
