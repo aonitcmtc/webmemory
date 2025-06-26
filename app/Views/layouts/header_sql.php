@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/storage.ico">
+    <link rel="shortcut icon" type="image/png" href="<?= base_url(); ?>/storage.ico">
 
-    <link href="/lib/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <script src="/lib/bootstrap-5.0.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link href="<?= base_url(); ?>/lib/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="<?= base_url(); ?>/lib/bootstrap-5.0.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
     <!-- font-awesome-4.7.0 -->
-    <link rel="stylesheet" href="/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/lib/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- <link href="/lib/font-awesome-4.7.0/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
 
     <!-- bootstrap-Icons -->
-    <link rel="stylesheet" href="/lib/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/lib/bootstrap-icons/bootstrap-icons.css">
 
     <!-- <script src="/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script> -->
 </head>
@@ -24,7 +24,7 @@
 <style>
     @font-face {
         font-family: 'Kanit';
-        src: url('/font/Kanit-Regular.ttf') format('truetype');
+        src: url('<?= base_url(); ?>/font/Kanit-Regular.ttf') format('truetype');
     }
 
     body{
@@ -97,7 +97,7 @@
         <nav class="navbar gm-nav-header navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand border border-secondary rounded-circle p-2 shadow-gc-img" href="javascript:void(0)">
-                    <img src="/image/manoffice.png" height="32px" alt="">
+                    <img src="<?= base_url(); ?>/image/manoffice.png" height="32px" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -105,7 +105,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link text-light active" aria-current="page" href="/sql">Home</a>
+                    <a class="nav-link text-light active" aria-current="page" href="<?= base_url(); ?>">Home</a>
                     </li>
                     <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>

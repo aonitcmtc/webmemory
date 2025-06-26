@@ -136,11 +136,11 @@
     </div>
     <?php endif; ?>
 
-    <script src="/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="<?= base_url(); ?>lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
 
     <!-- script select2 -->
-    <link href="/lib/select2/select2.min.css" rel="stylesheet" />
-    <script src="/lib/select2/select2.min.js"></script>
+    <link href="<?= base_url(); ?>lib/select2/select2.min.css" rel="stylesheet" />
+    <script src="<?= base_url(); ?>lib/select2/select2.min.js"></script>
 
     <script>
         $(document).ready(function(){
@@ -148,7 +148,7 @@
 
             $("#sql_query").change(function(){
                 var id = $(this).val();
-                window.location.href = '/sql/list/'+id;
+                window.location.href = '<?= base_url(); ?>sql/list/'+id;
             });
 
             $("#copy_sql").click(function(){
