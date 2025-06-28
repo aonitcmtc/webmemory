@@ -1,5 +1,12 @@
 # CodeIgniter 4 Application Starter
 
+# Copy Project to /API
+cd webmemory
+sudo rm -rf ../Project_NIM_API/API/public_html/webmemory/
+
+sudo cp -R ../webmemory ../Project_NIM_API/API/public_html/
+sudo chmod -R 777 ../Project_NIM_API/API/public_html/webmemory/
+
 ## What is CodeIgniter?
 
 CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
