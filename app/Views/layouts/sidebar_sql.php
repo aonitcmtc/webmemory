@@ -81,8 +81,8 @@
     <a href="<?= base_url('logout') ?>">Logout</a> -->
 
     <ul class="list-group list-group-flush">
-        <a href="/" class="text-decoration-none">
-            <li class="<?= $sql_path == '/' ? 'active':''?> dropdown list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-hover">
+        <a href="<?= base_url(); ?>" class="text-decoration-none">
+            <li class="<?= $sql_path == '/webmemory/public/' ? 'active':''?> dropdown list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-hover">
                 home
                 <!-- <span class="">
                     <i class="fa <?= $sql_path == '/' ? 'fa-caret-square-o-down':'fa-caret-square-o-right'?>" aria-hidden="true"></i>
@@ -90,8 +90,8 @@
             </li>
         </a>
 
-        <a href="/sql/memory" class="text-decoration-none">
-            <li class="<?= $sql_path == '/sql/memory' ? 'active':''?> dropdown list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-hover">
+        <a href="<?= base_url('sql/memory'); ?>" class="text-decoration-none">
+            <li class="<?= $sql_path == '/webmemory/public/sql/memory' ? 'active':''?> dropdown list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-hover">
                 Memory
                 <!-- <span class="">
                     <i class="fa <?= $sql_path == '/sql/memory' ? 'fa-caret-square-o-down':'fa-caret-square-o-right'?>" aria-hidden="true"></i>
@@ -99,8 +99,8 @@
             </li>
         </a>
 
-        <a href="/sql/list/0" class="text-decoration-none">
-            <li class="<?= $sql_path == '/sql/list/0' ? 'active':''?> dropdown list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-hover">
+        <a href="<?= base_url('sql/list/0'); ?>" class="text-decoration-none">
+            <li class="<?= $sql_path == '/webmemory/public/sql/list/0' ? 'active':''?> dropdown list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-hover">
                 SQL Lists
                 <!-- <span class="">
                     <i class="fa <?= $sql_path == '/sql/list/0' ? 'fa-caret-square-o-down':'fa-caret-square-o-right'?>" aria-hidden="true"></i>
@@ -114,7 +114,7 @@
             </li>
         </a> -->
 
-        <a href="/sql/history" class="text-decoration-none">
+        <a href="<?= base_url('sql/history'); ?>" class="text-decoration-none">
             <li class="<?= str_contains($sql_path, '/sql/history') ? 'active':''?> list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-hover">
                 History
                 <span class="">
@@ -125,14 +125,14 @@
         </a>
         <!-- child History -->
         <ul class="list-group list-group-flush <?= str_contains($sql_path, '/sql/history') ? '':'d-none'?>">
-            <a href="/sql/history" class="text-decoration-none">
-                <li class="<?= $sql_path == '/sql/history' ? 'active':''?> list-group-item list-group-child mt-1">
+            <a href="<?= base_url('sql/history'); ?>" class="text-decoration-none">
+                <li class="<?= $sql_path == '/webmemory/public/sql/history' ? 'active':''?> list-group-item list-group-child mt-1">
                     <i class="bi bi-server" aria-hidden="true"></i>       
                     history 1
                 </li>
             </a>
-            <a href="/sql/history/USER01" class="text-decoration-none">
-                <li class="<?= $sql_path == '/sql/history/USER01' ? 'active':''?> list-group-item list-group-child">
+            <a href="<?= base_url('sql/history/USER01'); ?>" class="text-decoration-none">
+                <li class="<?= $sql_path == '/webmemory/public/sql/history/USER01' ? 'active':''?> list-group-item list-group-child">
                     <i class="bi bi-server" aria-hidden="true"></i>    
                     history 2
                 </li>
@@ -140,7 +140,7 @@
         </ul>
         <!-- child History -->
 
-        <a href="/sql/content" class="text-decoration-none">
+        <a href="<?= base_url('sql/content'); ?>" class="text-decoration-none">
             <li class="<?= str_contains($sql_path, '/sql/content') ? 'active':''?> list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-hover">
                 SQL Content
                 <span class="">
@@ -151,14 +151,14 @@
         </a>
         <!-- child Content -->
         <ul class="list-group list-group-flush <?= str_contains($sql_path, '/sql/content') ? '':'d-none'?>">
-            <a href="/sql/content" class="text-decoration-none">
-                <li class="<?= $sql_path == '/sql/content' ? 'active':''?> list-group-item list-group-child mt-1">
+            <a href="<?= base_url('sql/content'); ?>" class="text-decoration-none">
+                <li class="<?= $sql_path == '/webmemory/public/sql/content' ? 'active':''?> list-group-item list-group-child mt-1">
                     <i class="bi bi-server" aria-hidden="true"></i>    
                     Content
                 </li>
             </a>
-            <a href="/sql/content/USER01" class="text-decoration-none">
-                <li class="<?= $sql_path == '/sql/content/USER01' ? 'active':''?> list-group-item list-group-child">
+            <a href="<?= base_url('sql/content/USER01'); ?>" class="text-decoration-none">
+                <li class="<?= $sql_path == '/webmemory/public/sql/content/USER01' ? 'active':''?> list-group-item list-group-child">
                     <i class="bi bi-server" aria-hidden="true"></i>
                     Selected
                 </li>

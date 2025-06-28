@@ -66,7 +66,8 @@
         </div>
     </div>
 
-<script src="/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+<!-- <script src="/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script> -->
+
 <script>
     // jquery
     $(document).ready(function(){

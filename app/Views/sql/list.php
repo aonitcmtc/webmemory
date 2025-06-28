@@ -136,67 +136,32 @@
     </div>
     <?php endif; ?>
 
-    <script src="/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+<!-- <script src="/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script> -->
 
-    <!-- script select2 -->
-    <link href="/lib/select2/select2.min.css" rel="stylesheet" />
-    <script src="/lib/select2/select2.min.js"></script>
+<!-- script select2 -->
+<link href="<?= base_url(); ?>lib/select2/select2.min.css" rel="stylesheet" />
+<script src="<?= base_url(); ?>lib/select2/select2.min.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $(".select2").select2();
+<script>
+    $(document).ready(function(){
+        $(".select2").select2();
 
-            $("#sql_query").change(function(){
-                var id = $(this).val();
-                window.location.href = '/sql/list/'+id;
-            });
-
-            $("#copy_sql").click(function(){
-                var copy_sql = $('#code_content').text();
-                // console.log(copy_sql);
-                navigator.clipboard.writeText(copy_sql);
-            });
-
-
-            // $("#btn_save").click(function(){
-            //     // console.log("btn_save :: ");
-            //     var valid = validation();
-            //     if(valid){
-            //         console.log("Send Ajax :: ");
-            //         var title = $("#title_sql").val();
-            //         var content = $("#sql_writing").val();
-            //         var output = $("#sql_output").val();
-
-            //         $.ajax({
-            //             url: '/sql/add',
-            //             type: 'POST',
-            //             dataType: "json",
-            //             data: JSON.stringify(
-            //                     { 
-            //                         title: title, 
-            //                         content: content, 
-            //                         output: output 
-            //                     }
-            //                 ),
-            //             success: function(response) {
-            //                 console.log('Response:', response);
-            //                 if(response['status'] == 200){
-            //                     $('input').val("");
-            //                     $('textarea').val("");
-        
-            //                     console.log('Clear Output');
-            //                 }
-            //             }
-            //         });
-            //     }
-            //     console.log("Debug :: End Process");
-            // });
-
-            // function validation() {
-                
-            // }
+        $("#sql_query").change(function(){
+            var id = $(this).val();
+            window.location.href = '<?= base_url(); ?>sql/list/'+id;
         });
-    </script>
+
+        $("#copy_sql").click(function(){
+            var copy_sql = $('#code_content').text();
+            // console.log(copy_sql);
+            navigator.clipboard.writeText(copy_sql);
+        });
+
+        // function validation() {
+            
+        // }
+    });
+</script>
 
 </div>
 <?= $this->endSection() ?>
